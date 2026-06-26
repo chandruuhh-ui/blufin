@@ -176,6 +176,18 @@ footer{
 <footer>
 © 2026 Blufin Fashion
 </footer>
+    <script>
+function login() {
+    let user = document.getElementById("user").value;
+    let pass = document.getElementById("pass").value;
+
+    if(user.trim() !== "" && pass.trim() !== ""){
+        window.location.href = "home.html";
+    } else {
+        alert("Please fill all fields");
+    }
+}
+</script>
 
 </body>
 </html>
