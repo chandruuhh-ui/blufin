@@ -1,10 +1,312 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Blufin Men's Wear</title>
+
+<title>Blufin Men's Wear</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:#fff7f0;
+}
+
+
+/* Header Animation */
+
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    text-align:center;
+    animation:slideDown 1s;
+}
+
+@keyframes slideDown{
+    from{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+}
+
+
+/* Hero */
+
+.hero{
+
+height:400px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+background:
+linear-gradient(#0008,#0008),
+url('https://images.unsplash.com/photo-1445205170230-053b83016050');
+
+background-size:cover;
+
+color:white;
+
+animation:zoom 2s;
+
+}
+
+
+@keyframes zoom{
+
+from{
+transform:scale(1.2);
+}
+
+to{
+transform:scale(1);
+}
+
+}
+
+
+
+.hero h1{
+
+font-size:50px;
+
+animation:text 2s;
+
+}
+
+
+@keyframes text{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+.btn{
+
+background:#ff0066;
+padding:15px 30px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+
+display:inline-block;
+
+animation:pulse 1.5s infinite;
+
+}
+
+
+@keyframes pulse{
+
+50%{
+transform:scale(1.1);
+}
+
+}
+
+
+
+/* Products */
+
+.products{
+
+display:flex;
+justify-content:center;
+gap:30px;
+padding:50px;
+flex-wrap:wrap;
+
+}
+
+
+.card{
+
+background:white;
+width:230px;
+padding:20px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px #ccc;
+
+text-align:center;
+
+transition:.5s;
+
+animation:up 1s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-15px) scale(1.05);
+
+}
+
+
+
+@keyframes up{
+
+from{
+
+opacity:0;
+transform:translateY(80px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+.card img{
+
+width:100%;
+border-radius:15px;
+
+}
+
+
+
+footer{
+
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+
+}
+
+</style>
+
 </head>
-<body style="font-family:Arial; text-align:center; margin-top:100px;">
-    <h1>🔥 Welcome to Blufin Men's Wear 🔥</h1>
-    <p>Created chandru</p>
+
+
+<body>
+
+
+<header>
+
+<h1>BLUFIN MEN'S WEAR</h1>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Shop</a>
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<div>
+
+<h1>New Style ✨</h1>
+
+<p>Premium Fashion Collection</p>
+
+<a class="btn" href="#">Explore</a>
+
+</div>
+
+</section>
+
+
+
+<h2 style="text-align:center">
+Latest Collection
+</h2>
+
+
+
+<section class="products">
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c">
+
+<h2>Women</h2>
+
+<p>Trending Dresses</p>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1617137968427-85924c800a22">
+
+<h2>Men</h2>
+
+<p>Classic Style</p>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1503944168849-8bf86875bbd8">
+
+<h2>Kids</h2>
+
+<p>New Fashion</p>
+
+</div>
+
+
+
+</section>
+
+
+
+<footer>
+
+© 2026 Blufin Fashion
+
+</footer>
+
+
 </body>
 </html>
